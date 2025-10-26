@@ -1,0 +1,25 @@
+#hero {
+    text-align: center;
+    background-image: url(../assets/praia.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & img[src="Logo-completa-branca"] {
+        width: 12.875rem;
+    }
+
+    & h1 {
+        margin-top: 1rem;
+    }
+
+    & p {
+        font: var(--fw-md) var(--fs-lg)/1.4 var(--ff-sans);
+        color: var(--text-secondary);
+        margin-top: .5rem;
+    }
+
+    & .buttons {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}

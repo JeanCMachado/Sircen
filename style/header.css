@@ -1,0 +1,13 @@
+header{
+    background-color: var(--bg-claro);
+    & a:first-child{
+        margin-right: auto;
+    }
+
+    /* Logo sizing in header */
+    & nav a img {
+        max-width: 45px; /* ajuste esse valor conforme desejado */
+        height: auto;
+        display: block;
+    }
+}
