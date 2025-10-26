@@ -8,6 +8,9 @@
     margin: 0;
     padding: 0;
     font: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -77,6 +80,7 @@ h2{
 
 h3{
     font-size: var(--fs-lg);
+    color: var(--text-highlight);
 }
 
 a {
@@ -85,11 +89,12 @@ a {
 }
 
 a:hover {
-    background: var(--bg-claro);
+    background: var(--logo-azure);
     cursor: pointer;
     -webkit-background-clip:text;
     background-clip: text;
     color: transparent;
+
 }
 
 img {
@@ -99,5 +104,8 @@ img {
 
 ul[role="list"] {
     list-style: none;
+
 }
+
+
 

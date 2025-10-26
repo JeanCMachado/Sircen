@@ -1,12 +1,29 @@
 a.social{
     --bg-img: "";
-    background-image: var(--bg-img);
+    /* prevent global `a:hover` background from overriding the icon */
+    background: none !important;
+    background-image: var(--bg-img) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 1.5rem;
     height: 1.5rem;
-    display: block;
+    display: inline-block;
+    background-color: transparent !important;
+    -webkit-tap-highlight-color: transparent; /* remove blue highlight on mobile/tap */
+    -webkit-user-select: none;
+    user-select: none;
 
-    --webkit-background-clip: initial;
-    background-clip: initial;
+    /* keep background-image controlled by the --bg-img variable even on hover/focus */
+    &:hover,
+    &:focus,
+    &:active {
+        background: none !important;
+        background-image: var(--bg-img) !important;
+        background-color: transparent !important;
+        outline: none;
+        box-shadow: none;
+    }
 
     &[aria-label="tiktok"]{
         --bg-img: url(../assets/icons/Tiktok.svg);
