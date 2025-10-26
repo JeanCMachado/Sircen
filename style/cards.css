@@ -1,0 +1,23 @@
+.card {
+    background: var(--bg-claro);
+    border: 1px solid var(--stroke-color);
+    border-radius: 1.5rem;
+
+    & h3 {
+        margin-top: 1rem;
+    }
+}
+
+/* estilo para o cartão principal que será apenas imagem */
+.card.card--media {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.card.card--media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

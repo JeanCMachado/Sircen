@@ -1,0 +1,52 @@
+footer {
+    color: var(--text-secondary);
+    font-weight: var(--fw-md);
+    background-color: var(--bg-claro);
+
+    /* Espaçamento superior para afastar o footer dos cards/section acima */
+    margin-top: 2.5rem;
+    padding-block: 3rem;
+
+    & .container{
+        padding-inline: 3rem;
+    }
+
+    & .container,
+    & .top{
+        gap: 3rem;
+    }
+
+    /* Logo sizing in footer */
+    & .top img {
+        max-width: 50px; /* ajuste esse valor conforme desejado */
+        height: auto;
+        display: block;
+    }
+
+    & nav.even-columns{
+        gap: 4rem;
+    }
+
+    & .top ul{
+        align-content: start;
+    }
+
+    & .title {
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--logo-azure);
+    }
+
+    & .bottom {
+        flex-wrap: wrap;
+
+        & > div {
+            margin-right: auto;
+        }
+
+        & span {
+            font-size: .875rem;
+        }
+    }
+}
