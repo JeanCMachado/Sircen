@@ -1,8 +1,22 @@
 #products {
+    /* cria um espaçamento superior e permite posicionamento relativo
+       para que o bloco .cards possa se sobrepor visualmente ao hero */
+    position: relative;
+    padding-top: 3.5rem;
+
     & .cards {
+        /* existente: grid + layout das cards */
         grid-template-columns: 17.5rem 1fr 1fr 17.5rem;
         grid-template-rows: 25rem 25rem;
         gap: 2rem;
+
+        /* nova estética: bloco branco com bordas arredondadas e sombra
+           que se sobrepõe levemente ao hero, criando separação */
+        background: #fff;
+        padding: 2rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 18px 40px rgba(9, 30, 66, 0.08);
+        transform: translateY(-3.25rem);
     }
 
     & .card {
