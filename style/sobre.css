@@ -1,0 +1,140 @@
+/* Estilos específicos para a página Sobre */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.about-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.about-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.about-card p {
+    color: #444;
+    line-height: 1.5;
+}
+
+.about-card ul {
+    padding-left: 1.1rem;
+}
+
+.lead {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Fundo da página para a página Sobre (mantém os cards brancos) */
+body {
+    background: #e9f2ff;
+}
+
+/* Wide card (span two columns) */
+.about-card--wide {
+    grid-column: span 2;
+}
+
+.about-card--wide .about-item img {
+    width: 220px;
+    height: 220px;
+}
+
+/* Layout for image + text inside each card */
+.about-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.about-item img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-item {
+        flex-direction: column;
+    }
+    .about-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Careers (Trabalhe Conosco) styles */
+
+.about-card--careers p {
+    margin: .5rem 0;
+}
+
+/* add spacing between careers section and the about content */
+#careers {
+    margin: 3rem 0; /* espaço superior e inferior para separar dos cartões acima */
+}
+
+/* center the Valores card inside the grid */
+.about-card--center {
+    justify-self: center;
+    max-width: 540px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .about-card--center {
+        justify-self: stretch;
+        max-width: 100%;
+    }
+}
+.careers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.job-form label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.job-form input[type="text"],
+.job-form input[type="email"],
+.job-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 0.35rem;
+}
+
+.job-form input[type="file"] {
+    margin-top: 0.35rem;
+}
+
+.job-form .btn {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+    .careers-grid {
+        grid-template-columns: 1fr;
+    }
+}
